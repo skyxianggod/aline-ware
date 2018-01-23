@@ -15,3 +15,5 @@ class Settings(object):
         self.bullet_wight = 3
         self.bullet_hight = 15
         self.bullet_color = 60,60,60
+        '''外星人速度设置'''
+        self.alien_spped = 1

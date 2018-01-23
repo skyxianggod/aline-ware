@@ -1,6 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-import os,sys
+import os
+import sys
+
 BASEDIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASEDIR)
 import  pygame
@@ -53,6 +55,7 @@ class run(object):
         for bullet in bullets.sprites():
             bullet.draw_bullet()
         for aline in alines.sprites():
+            aline.move()
             aline.blitme()
         self.ALship.blitme()
         pygame.display.flip()

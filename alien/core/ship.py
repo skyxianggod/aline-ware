@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 import pygame
-from conf.settings import Settings
+
+from alien.conf.settings import Settings
+
+
 class Ship(object):
 
     def __init__(self,screen):
